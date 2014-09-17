@@ -2,15 +2,23 @@ package com.hunsdale.songwriterapp;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 
 public class LauncherActivity extends ActionBarActivity {
+	
+	ProgressBar pgr;
+	int progress = 0;
+	Handler h = new Handler();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launcher);
+		
+
 	}
 
 	@Override
